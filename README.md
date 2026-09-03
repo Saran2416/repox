@@ -29,11 +29,11 @@ It scans repositories, detects architecture and technologies, generates AI analy
 
 ```bash
 cd Backend
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-copy .env.example .env
-uvicorn main:app --reload --port 8000
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+cp .env.example .env
+python -m uvicorn main:app --reload --port 8000
 ```
 
 ### Frontend
